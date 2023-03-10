@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+h1{
+    font-size: 4.2rem;
+    color: #ffff;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #ffff;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffff;
+}
+h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden; 
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.row{
+    max-width: 110rem;
+    margin: 0 auto;
+}
+section{
+    padding: 8rem;
+}
+header{
+    background: #864f9c;
+    height: 85vh;
+    position: relative;
+    background-attachment: fixed;
+}
+.logo{
+    height: 2.8rem;
+    margin-top: 3.5rem;
+    float: left;
+}
+
+.main-nev{
+    float: right;
+    margin-top: 4.2rem;
+}
+.main-nev li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.main-nev li:first-child{
+    margin-left: 0;
+}
+.main-nev li a:link, .main-nev li a:visited{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    background: rgba(100, 58, 121, 0);
+    padding: 0.3rem 1.2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: 0.4s;
+}
+
+.main-nev li:hover a:link, .main-nev li:hover a:visited{
+    background: rgba(100, 58, 121, 1);
+}
+.main-nev li.active a:link, .main-nev li.active a:visited{
+    background: rgba(100, 58, 121, 1);
+    border-radius: .5rem;
+}
+
+.nav-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn:link, .btn:visited, .btn{
+    background: #333;
+    border-bottom: .2rem solid #000;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 5rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
+.btn-hero:link, .btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+
+/* Service Section */
+
+.service-section{
+    color: #ffff;
+    text-align: center;
+    background: #17c2a4;
+}
+.service-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 1.3rem;
+}
+.service-section h2::after{
+    background: #14a58c;
+}
+.icon{
+    height: 10rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+.box{
+    padding: 2%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #ffff;
+}
+
+/* Team Section */
+
+.team-section{
+    text-align: center;
+    background: #e7f1f8;
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background: #c8d9e5;
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.4rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.team-section h3{
+    color: #27283d;
+}
+.role{
+    color: #30bae7;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.team-section .box p{
+    color: #3c4761;
+    margin-top: 1rem;
+}
+.social-link{
+    margin-top: 2rem;
+}
+
+.social-link ul li{
+    display: inline-block;
+    margin: .5rem;
+}
+.social-link ul li a:link{
+    color: #fff;
+}
+.social-link ul li a:link i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.social-link ul li a:hover i::before{
+    background: #bdd1df7f;
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+.skill-section{
+    background:rgb(68, 20, 92);
+    text-align: center;
+}
+.skill-section h2::after{
+    background: #14a58c;
+    margin-top: 1rem;
+    border-radius: 50%;
+    height: .2rem;
+}
+.skill-section p{
+    color: #ffff;
+    font-weight: 10;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    fill: transparent;
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    font-size: 2rem;
+}
+svg.web-design circle{
+    stroke: #17c2a4;
+}
+svg.html-css circle{
+    stroke: #227fdc;
+}
+svg.graphic-design circle{
+    stroke: #edf581;
+}
+svg.ui-ux circle{
+    stroke: #ac3a14;
+}
+
+.portfolio-section{
+    background: #ffdd99;
+    text-align: center;
+    background-size: cover;
+}
+.portfolio-section h2{
+    color: black;
+}
+.portfolio-section h2::after{
+    background: #51615e;
+    margin-top: 1rem;
+    border-radius: 50%;
+    height: .2rem;
+    width: 20rem;
+}
+.portfolio-filter{
+    margin: 4.5rem;
+}
+.portfolio-section p{
+    color: black;
+    font-weight: 10;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+.portfolio-filter button{
+    background: #ffba2fc0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: 0;
+    color: #3c4761;
+    margin: .5rem;
+    transition: .2s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .2rem .1rem #3c4761;
+}
+.porfolio-image{
+    width: 100%;
+    height: 30rem;
+}
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+
+.review-section{
+    background: #d74680; 
+}
+.review-section .service-description{
+    text-align: center;
+    color: #ffff;
+}
+.review-section h2{
+    text-align: center;
+}
+.review-section h2::after{
+    background: #acced972;
+    border-radius: 2rem;
+}
+.review-section .col:nth-child(3){
+    margin-left: 0;
+}
+.review-section .col:nth-child(1), .review-section .col:nth-child(2){
+    margin-top: 4rem;
+}
+.review-section .col:nth-child(3), .review-section .col:nth-child(4){
+    margin-top: 8rem;
+}
+.client-photo img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    float: left;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+/* .client-review p{
+    float: left;
+} */
+.client-review{
+    width: 40rem;
+}
+.client-review h3{
+    float: left;
+    margin-top: 2rem;
+    
+}
+.client-review p{
+    font-style: italic;
+    margin-top: 0;
+}
+.client-review .role{
+    margin-top: 0;
+    float: left;
+    color: #ffdd99;
+}
+
+.contact-section{
+    background: #3c5499;
+    text-align: center;
+}
+.contact-section h2::after{
+    background: #7ab9ce72;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.contact-section p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+.contact-section input[type="text"], .contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    color: #fff;
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.contact-section textarea{
+    height: 20rem;
+}
+.submit-btn{
+    border: 0;
+    border-bottom: .2rem solid #1485ab;
+    background: #30bae7;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background: #1485ab;
+    transition: .2s;
+}
+.footer-section{
+    background: #082372;
+    padding: 3rem 0;
+    text-align: center;
+    border: .1rem solid black;
+
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 4rem;
+}
+.footer-section li a, .footer-section li:link a, .footer-section li:visited a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.footer-section li:hover a{
+    color: #1485ab;
+}
