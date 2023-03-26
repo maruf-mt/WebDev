@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Web</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Web Design</a>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="action-btn">Get Started</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-manue">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="action-btn">Get Started</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Illum nostrum animi aperiam quia vel quos neque nisi</p>
+        </section>
+    </main>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmanue = document.querySelector('.dropdown-manue')
+
+        togglebtn.onclick = function(){
+            dropdownmanue.classList.toggle('open')
+            const isOpen = dropdownmanue.classList.contains('open')
+
+            togglebtnicon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
