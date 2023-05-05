@@ -4,55 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Responsive Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>Food Hub</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="#">Web Design</a>
-            </div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
+    <header id="header-section">
+        <div class="row">
+            <a href="#header-section">
+                <img alt="Cooking Logo" src="img/logo.png" class="logo">
+            </a>
+            <ul class="main-nev">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#subscribe">subscribe</a></li>
+                <li><a href="#footer">about</a></li>
             </ul>
-            <a href="#" class="action-btn">Get Started</a>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+            <div class="mobile-manue">
+                <span style="color: #ffff;" onclick="opennav()">&#9776;</span>
+                <div id="my-nav" class="overlay">
+                    <a href="javascript:void(0)" onclick="closenav()" class="closebtn">&times;</a>
+                    <div class="overlay-container">
+                        <a onclick="closenav()" href="#home">HOME</a>
+                        <a onclick="closenav()" href="#product">Product</a>
+                        <a onclick="closenav()" href="#promo">Promo</a>
+                        <a onclick="closenav()" href="#review">Review</a>
+                        <a onclick="closenav()" href="#subscribe">subscribe</a>
+                        <a onclick="closenav()" href="#footer">about</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="dropdown-manue">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="action-btn">Get Started</a></li>
+        <div class="info">
+            <h1>Food Hub</h1>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, velit doloribus cupiditate alias fugit nihil, 
+                    repudiandae rem eum facilis neque corporis dignissimos animi accusantium quaerat excepturi.
+                </p>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit"><a href="#">Order Now</a></button>
         </div>
     </header>
-    <main>
-        <section id="hero">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Illum nostrum animi aperiam quia vel quos neque nisi</p>
-        </section>
-    </main>
+    <section class="menu-section " id="product">
+        <div class="text-container">
+            <h2>Popular Menu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat, in aperiam aspernatur consectetur ipsa repudiandae similique nobis expedita, dicta explicabo quae voluptatibus sed perferendis.</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="grid-container swiper-wrapper">
+                <div class="grid-item swiper-slide">
+                    <img class="menu-item" src="img/item1.jpg">
+                    <h3>Chicken Steak</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="grid-item swiper-slide">
+                    <img class="menu-item" src="img/item2.jpg">
+                    <h3>Mutton Steak</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="grid-item swiper-slide">
+                    <img class="menu-item" src="img/item3.jpg">
+                    <h3>Chicken Curry</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="grid-item swiper-slide">
+                    <img class="menu-item" src="img/item5.png">
+                    <h3>Chicken Burger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="grid-item swiper-slide">
+                    <img class="menu-item" src="img/item6.jpg">
+                    <h3>Cheese Pasta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <section class="promotional-section" id="promo">
+        <div class="container">
+            <img src="img/item4.jpg" alt="Promo" class="promo-item">
+            <div class="promo-description">
+                <h2>Today's Special</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit saepe rem eius accusantium iste obcaecati consectetur libero necessitatibus? Repellendus doloribus rerum maxime nisi voluptatibus quas obcaecati. Laudantium, quod. Eos?</p>
+                <div class="btn">
+                    <button type="submit">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review-section" id="review">
+        <div class="review">
+            <img src="img/person.jpeg" alt="Person">
+            <div class="review-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt saepe accusamus velit, deserunt quisquam modi, quibusdam ab blanditiis quasi voluptas eaque ipsum amet id, eveniet tenetur alias. Tempora, qui odit!</p>
+                <h3>Phoebe Frazier</h3>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section" id="subscribe">
+        <div class="subscribe">
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, amet facere dolorem nesciunt consequatur nulla quam eum pariatur perferendis aliquam harum beatae, ipsum atque deserunt possimus. Dolores tempore repellat beatae.</p>
+            <div class="email-input">
+                <input type="email" required placeholder="Your Email">
+                <button type="submit" class="btn">subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section" id="footer">
+        <div class="footer-container">
+            <div class="title col-container">
+                <h3>Food Hub</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla eligendi. Quas, molestiae. Quis sit vitae repellendus. Vitae dolorum incidunt voluptate.</p>
+                <div class="social-logos">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about col-container">
+                <h3>About</h3>
+                <ul class="footer-list">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Brand Guidelines</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="service col-container">
+                <h3>Services</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">Our Product</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Method</a></li>
+                </ul>
+            </div>
+            <div class="others col-container">
+                <h3>Others</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
     <script>
-        const togglebtn = document.querySelector('.toggle-btn')
-        const togglebtnicon = document.querySelector('.toggle-btn i')
-        const dropdownmanue = document.querySelector('.dropdown-manue')
-
-        togglebtn.onclick = function(){
-            dropdownmanue.classList.toggle('open')
-            const isOpen = dropdownmanue.classList.contains('open')
-
-            togglebtnicon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
     </script>
 </body>
 </html>

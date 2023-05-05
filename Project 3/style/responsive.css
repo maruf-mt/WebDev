@@ -1,0 +1,355 @@
+
+@media only screen and (max-width: 1200px) { 
+    html{
+        font-size: 88%;
+    }
+    header{
+        height: 65vh;
+    }
+    .info{
+        margin-top: 15rem;
+    }
+    .menu-section{
+        height: 75vh;
+    }
+    .promotional-section{
+        height: 60vh;
+    }
+    .review-section{
+        height: 60vh;
+    }
+    .subscribe-section{
+        height: 60vh;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 30%;
+    }
+    .footer-section{
+        height: 28vh;
+    }
+    .footer-container .title p{
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 900px) { 
+    html{
+        font-size: 80%;
+    }
+    .main-nev li a:link, .main-nev li a:visited{
+        padding: .2rem .35rem;
+        margin-right: 1rem;
+    }
+    header{
+        height: 82vh;
+    }
+    h1{
+        padding: 2rem;
+    }
+    .info{
+        margin-top: 15rem;
+    }
+    .btn button a, .btn button a:active, .btn button a:visited{
+        padding-bottom: 5rem;
+    }
+    .description p{
+        padding: 3rem;
+    }
+    .menu-section{
+        height: 70vh;
+    }
+    img.menu-item{
+        height: 14rem;
+        width: 14rem;
+    }
+    .promo-item{
+        height: 20rem;
+        margin-top: 8rem;
+    }
+    .container .promo-description{
+        padding-top: 10rem;
+    }
+    .promo-description h2::after{
+        max-width: 50rem;
+    }
+    .review-section, 
+    .subscribe-section,
+    .promotional-section{
+        height: 55vh;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 35%;
+    }
+    .footer-section{
+        height: 35vh;
+    }
+    .col-container:nth-child(2),
+    .col-container:nth-child(3),
+    .col-container:nth-child(4){
+        margin-left: 3.5rem;
+    }
+    .col-container:nth-child(4){
+        margin-right: 4rem;
+    }
+}     
+@media only screen and (max-width: 720px){
+    header{
+        height: 78vh;
+    }
+    .menu-section{
+        height: 70vh;
+    }
+    .promotional-section{
+        height: 60vh;
+    }
+    .promo-item{
+        height: 18rem;
+    }
+    .footer-section{
+        height: 32vh;
+    }
+    .col-container:nth-child(2),
+    .col-container:nth-child(3),
+    .col-container:nth-child(4){
+        margin-left: 2.5rem;
+    }
+    .col-container:nth-child(4){
+        margin-right: 2.5rem;
+    }
+}   
+@media only screen and (max-width: 680px){
+    html{
+        font-size: 72%;
+    }
+    header{
+        height: 70vh;
+    }
+    .mobile-manue span{
+        display: inline-block;
+    }
+    .info{
+        margin-top: 16rem;
+    }
+    .logo{
+        height: 3.1rem;
+        width: 6.5rem;
+        margin: 1.5rem;
+    }
+    .main-nev li{
+        display: none;
+    }
+    .menu-section{
+        height: 60vh;
+    }
+    .text-container p{
+        padding-top: 2rem;
+    }
+    .promo-description h2::after{
+        max-width: 50rem;
+    }
+    .review-section,
+    .subscribe-section,
+    .promotional-section{
+        height: 50vh;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 38%;
+    }
+    .footer-section{
+        height: 30vh;
+    }
+    .col-container:nth-child(2),
+    .col-container:nth-child(3),
+    .col-container:nth-child(4){
+        margin-left: 2rem;
+    }
+    .col-container:nth-child(4){
+        margin-right: 2rem;
+    }
+}
+@media only screen and (max-width: 520px){
+    html{
+        font-size: 65%;
+    }
+    h1{
+        padding: 1.5rem;
+    }
+    .info{
+        margin-top: 18rem;
+    }
+    .description p{
+        font-size: 1.2rem;
+        max-width: 75%;
+    }
+    .menu-section{
+        height: 55vh;
+    }
+    img.menu-item{
+        height: 12rem;
+        width: 12rem;
+    }
+    .promotional-section{
+        text-align: center;
+        height: 55vh;
+    }
+    .promo-item{
+        margin-top: 2rem;
+        float: none;
+    }
+    .container .promo-description{
+        padding-top: 1.5rem;
+    }
+    .promo-description h2::after{
+        max-width: 10rem;
+        margin-top: .5rem;
+    }
+    .review-section,
+    .subscribe-section{
+        height: 45vh;
+    }
+    .review img{
+        margin-top: 4rem;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 42%;
+    }
+    .footer-section{
+        height: 40vh;
+    }
+    .col-container:first-child{
+        grid-column: 1 / span 4;
+        text-align: center;
+    }
+    .footer-container .title h3{
+        width: 95%;
+    }
+    .col-container:first-child{
+        margin-top: 3rem;
+    }
+    .col-container:nth-child(2),
+    .col-container:nth-child(3),
+    .col-container:nth-child(4){
+        margin-top: 2rem;
+        padding-left: 4.5rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    header{
+        height: 75vh;
+    }
+    h1{
+        font-size: 3.5rem;
+        padding: 2rem;
+    }
+    .info{
+        margin-top: 18rem;
+    }
+    .description p{
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+    .mobile-manue span{
+        font-size: 2rem;
+    }
+    .overlay a{
+        font-size: 2.5rem;
+    }
+    .menu-section{
+        height: 62vh;
+    }
+    .promotional-section{
+        height: 65vh;
+    }
+    .subscribe-section{
+        height: 55vh;
+    }
+    .footer-section{
+        height: 30vh;
+    }
+    .text-container{
+        padding-top: 2.5rem;
+    }
+    .promo-item{
+        height: 18rem;
+        margin-top: 5rem;
+    }
+    .container .promo-description p{
+        max-width: 65%;
+    }
+    .promo-description .btn button{
+        margin-top: 2rem;
+    }
+    .subscribe h2{
+        padding-top: 4rem;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 55%;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+    .subscribe .btn{
+        font-size: 1.2rem;
+    }
+    .footer-section{
+        height: 35rem;
+    }
+    .col-container:nth-child(2),
+    .col-container:nth-child(3),
+    .col-container:nth-child(4){
+        padding-left: 1.8rem;
+    }
+}
+@media only screen and (max-width: 360px){
+    header{
+        height: 75vh;
+    }
+    .btn button{
+        transform: translate(35%, 50%);
+    }
+    .menu-section{
+        height: 70vh;
+    }
+    .promotional-section{
+        height: 62vh;
+    }
+    .promo-item{
+        height: 16rem;
+    }
+    .review-section{
+        height: 38rem;
+    }
+    .review img{
+        height: 12rem;
+        margin-top: 3rem;
+    }
+    .subscribe-section{
+        height: 40rem;
+    }
+    .subscribe p{
+        margin-top: 2rem;
+    }
+    .subscribe .email-input input,
+    .subscribe .email-input input:active,
+    .subscribe .email-input input:focus{
+        width: 74%;
+        height: 4rem;
+    }
+    .subscribe .btn{
+        margin-top: .5rem;
+        clear: left;
+        width: 40%;
+    }
+    .footer-section{
+        height: 38rem;
+    }
+}

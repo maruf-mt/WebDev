@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Titillium+Web:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+.logo{
+    height: 3.1rem;
+    width: 6.5rem;
+    margin: 2rem;
+    transition: 0.05s ease;
+}
+header{
+    height: 100vh;
+    position: relative;
+    background: url("../img/cover1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+}
+.row{
+    max-width: 110rem;
+    margin: 0 auto;
+}
+.main-nev{
+    float: right;
+    margin-top: 2.5rem;
+}
+.main-nev li{
+    display: inline-block;
+    margin-left: 1.15rem;
+}
+.main-nev li:hover{
+    border-radius: .5rem;
+    scale: 1.10;
+}
+.main-nev li a:link, .main-nev li a:visited{
+    color:  black;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .2rem .35rem;
+    margin-right: 2rem;
+    background-color: rgba(235, 217, 184, 0.915);
+    border-radius: .5rem;
+}
+.mobile-manue{
+    float: right;
+}
+.mobile-manue span{
+    color: #fff;
+    font-size: 3rem;
+    float: right;
+    margin-top: .5rem;
+    display: none;
+    padding-right: 1rem;
+}
+.mobile-manue span:hover{
+    cursor: pointer;
+}
+.sticky .mobile-manue span{
+    margin-top: 0;
+    line-height: 1;
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000000;
+    overflow-x: hidden;
+    transition: .4s;
+}
+.overlay a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    color: #999;
+    padding: 1rem 0;
+}
+.overlay a:hover{
+    color: #fff;
+}
+.overlay-container{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+.closebtn{
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 3.5rem;
+}
+
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+    padding: 3rem;
+    background-image: linear-gradient( 109.6deg,  rgba(61,131,97,.7) 11.2%, rgba(28,103,88,.7) 91.1% );
+    border-radius: 0 1rem 0 0;
+    display: block;
+    max-width: 40%;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.info{
+    margin-top: 8%;
+}
+.description p{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 3.5rem;
+    display: block;
+    max-width: 70%;
+    background: rgb(199,84,84);
+    background: linear-gradient(90deg, rgba(199,84,84,.8) 14%, rgba(232,17,17,.8) 60%, rgba(232,17,17,.8) 100%); 
+    border-radius: 0 1rem 1rem 0;
+}
+.btn button{
+    font-size: 1.2rem;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    letter-spacing: .3rem;
+    background-color: rgb(33, 36, 60);
+    border-radius: 5rem;
+    height: 4rem;
+    width: 20rem;
+    text-align: center;
+    border: none;
+    color: #fff;
+    transform: translate(50%, 50%);
+}
+.btn button a,
+.btn button a:active,
+.btn button a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn button:hover{
+    cursor: pointer;
+    border: none;
+    scale: 1.05;
+}
+
+/* ========================== */
+/* ====== Menu Section ====== */
+/* ========================== */
+
+.menu-section{
+    background: linear-gradient(rgba(12, 16, 30, .94), rgba(12, 16, 30, .94)), url("../img/cover2.jpeg") ;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    color: #fff;
+}
+.text-container{
+    text-align: center;
+    padding-top: 4rem;
+}
+.text-container h2{
+    font-weight: 100;
+}
+.text-container h2::after{
+    content: "";
+    display: block;
+    height: .1rem;
+    max-width: 8rem;
+    margin: auto;
+    margin-top: .5rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40%;
+}
+.text-container p{
+    font-size: 1.1rem;
+    display: inline-flex;
+    max-width: 68%;
+    padding-top: 3rem;
+    letter-spacing: .1rem;
+}
+.grid-container{
+    text-align: center;
+    margin-top: 4rem;
+}
+.grid-item{
+    display: block;
+    width: 25.3%;
+}
+
+img.menu-item{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+.grid-item h3{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.grid-item p{
+    font-size: 1rem;
+    letter-spacing: .02rem;
+    font-weight: 100;
+    margin-top: .8rem;
+}
+
+.swiper-pagination{
+    padding-top: 3rem;
+}
+
+/* ========================== */
+/* ===== Promo Section ====== */
+/* ========================== */
+
+.promotional-section{
+    background-color: rgb(255, 208, 125);
+    height: 100vh;
+    color: black;
+}
+
+.promo-item{
+    float: left;
+    height: 25rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+.container .promo-description{
+    display: block;
+    padding-top: 15rem;
+    text-align: center;
+}
+.promo-description h2::after{
+    content: "";
+    display: block;
+    height: .1rem;
+    max-width: 70rem;
+    margin: auto;
+    margin-top: .8rem;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 5rem;
+}
+.container .promo-description p{
+    font-size: 1.1rem;
+    display: inline-flex;
+    font-weight: 200;
+    max-width: 46%;
+    padding-top: 1.3rem;
+    letter-spacing: .05rem;
+}
+
+.promo-description .btn button{
+    width: 15rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    transform: translate(0,0);
+}
+
+/* ========================== */
+/* ==== Review Section ====== */
+/* ========================== */
+
+.review-section{
+    background: linear-gradient(rgba(12, 16, 30, .94), rgba(12, 16, 30, .94)), url("../img/cover2.jpeg") ;
+    height: 85vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    color: #fff;
+    text-align: center;
+}
+.review img{
+    margin-top: 6rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.review-description p{
+    margin: 1.2rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    max-width: 65%;
+    padding-top: 1.5rem;
+    letter-spacing: .05rem;
+}
+
+/* ========================== */
+/* ====== Sub Section ======= */
+/* ========================== */
+
+.subscribe-section{
+    background-color: rgb(255, 208, 125);
+    height: 80vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    color: black;
+    text-align: center;
+}
+.subscribe h2{
+    padding-top: 5rem;
+}
+.subscribe p{
+    font-size: 1.1rem;
+    max-width: 65%;
+    margin-top: 3rem;
+    display: inline-flex;
+}
+.subscribe .email-input{
+    margin-top: 7rem;
+}
+.subscribe .email-input input,
+.subscribe .email-input input:active,
+.subscribe .email-input input:focus{
+    border-radius: 5rem;
+    padding: 1.2rem 2rem;
+    width: 25%;
+    font-size: 1rem;
+    border: none;
+}
+.subscribe .btn{
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    width: 10rem;
+    padding: 1.25rem;
+}
+.subscribe .btn:hover{
+    cursor: pointer;
+}
+
+/* ========================== */
+/* ===== Footer Section ===== */
+/* ========================== */
+
+.footer-section{
+    background-color: rgb(17, 17, 17);
+    height: 40vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    color: #fff;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.social-logos ul li{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.col-container .title{
+    max-width: 65%;
+}
+.col-container:first-child{
+    margin-left: 3.5rem;
+    display: block;
+    float: left;
+}
+.col-container{
+    margin-top: 3.5rem;
+    display: block;
+    float: left;
+}
+.col-container:nth-child(2),
+.col-container:nth-child(3),
+.col-container:nth-child(4){
+    margin-left: 8rem;
+}
+.col-container:nth-child(4){
+    margin-right: 6rem;
+}
+.footer-container .title h3{
+    width: 70%;
+}
+.footer-container .title p{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    max-width: 80%;
+}
+.col-container .footer-list{
+    list-style-type: none;
+    font-size: 1.12rem;
+}
+.col-container .footer-list a,
+.col-container .footer-list a:visited,
+.col-container .footer-list a:active{
+    text-decoration: none;
+    color: #fff;   
+}
+.col-container .footer-list a:hover{
+    color: rgb(255, 207, 125);
+}
