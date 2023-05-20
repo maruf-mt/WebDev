@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    position: relative;
+    top: -4rem;
+}
+
+.container{
+    border: 1px solid black;
+    padding: 8rem;
+    width: 80%;
+    margin: 8rem auto;
+    text-align: center;
+}
+.form{
+    padding: 1rem;
+}
+.input-div{
+    padding: .3rem;
+}
+div label,
+div label[value='checkbox'] {
+    padding: .2rem;
+}
+.checkbox{
+    margin: auto;
+}

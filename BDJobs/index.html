@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Management</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="./submit.php">
+                <div class="input-div">
+                    <label for="bookname">Book Name:</label>
+                    <input type="text" name="bookname" id="bookname">
+                </div>
+                <div class="input-div">
+                    <label for="publisherName">Publisher Name:</label>
+                    <input type="text" name="publisherName" id="publisherName">
+                </div>
+                <div class="input-div">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="input-div">
+                    <label for="publishDate">Published Date:</label>
+                    <input type="date" max="2022-12-31" name="publishDate">
+                </div>
+                <div class="checkbox">
+                    <label for="#">Book Type: </label>
+
+                    <label for="seifi">Sei-Fi</label>
+                    <input type="checkbox" name="seifi">
+
+                    <label for="drama">Drama</label>
+                    <input type="checkbox" name="drama">
+
+                    <label for="novel">Novel</label>
+                    <input type="checkbox" name="novel">
+                </div>
+            </form>
+            <input type="submit" value="Submit" onclick="">
+        </div>
+    </div>
+</body>
+</html>
